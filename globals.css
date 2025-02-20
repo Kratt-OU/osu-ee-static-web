@@ -12,7 +12,7 @@ body {
             rgba(12, 20, 27, 0.8),
             rgb(2, 10, 19)
         ), 
-        url('../public/bong8.jpg');
+        url('public/bong8.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
