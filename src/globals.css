@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #eaeaea;
+    font-family: "Allerta", sans-serif;
+    background: 
+        linear-gradient(
+            rgba(12, 20, 27, 0.8),
+            rgb(2, 10, 19)
+        ), 
+        url('../public/bong8.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+}
+
+.content {
+    align-items: center;
+    display: center;
+}
+
+.bubble-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: -20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.bubble {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #1f4068;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.bubble img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.bubble-text {
+    font-size: 32px;
+    color: #eaeaea;
+    font-family: "Allerta", sans-serif;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 2em;
+}
+
+.container h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container p {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 16px;
+}
+
+.highlight {
+    color: #3685df;
+}
+
+.underline a {
+    color: #eaeaea;
+    text-decoration-line: none;
+}
+
+a:focus,
+a:visited,
+a:active {
+    color: #3685df;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #aeaeae;
+}
+
+.discord-widget {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    color: #eaeaea;
+    font-size: 14px;
+}
+
+footer a {
+    color: #aeaeae;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:visited, footer a:active {
+    color: #aeaeae;
+    text-decoration: underline;
+}
